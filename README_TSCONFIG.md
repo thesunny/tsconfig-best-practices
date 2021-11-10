@@ -16,12 +16,17 @@ This command will pull the various `tsconfig` files and this `README_TSCONFIG.md
 git pull https://github.com/thesunny/tsconfig-best-practices.git
 ```
 
+## Why in root
+
+The `tsconfig` files are all in root because, unfortunately, the way that the tsconfig file works, moving it to a different directory causes issues. While they could likely be overcome, it's better to have a polluted root directory than the added complexity.
+
 ## The main `tsconfig` file
 
 It includes a base `tsconfig.json` file that:
 
 - outputs `commonjs`
 - doesn't emit
+- is strict about TypeScript but not unused variables
 
 The file has these characteristics:
 
