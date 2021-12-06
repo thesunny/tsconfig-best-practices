@@ -1,11 +1,5 @@
 {
   /**
-   * Required or `ts-node` won't use our custom `paths` below
-   */
-  "ts-node": {
-    "require": ["tsconfig-paths/register"]
-  },
-  /**
    * Compiler Options
    *
    * NOTE:
