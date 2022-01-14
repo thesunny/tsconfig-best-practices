@@ -47,7 +47,12 @@
      * - `typeRoots` for where to look for premade types to be included
      */
     "baseUrl": ".",
-    "module": "commonjs",
+    /**
+     * Removed `module` from the base config because it is different in many
+     * tsconfig. By leaving it out here, we try to make it more explicit when
+     * extending tsconfig.base.json.
+     */
+    // "module": "commonjs",
     "moduleResolution": "node",
     "paths": {
       "~/*": ["*"],

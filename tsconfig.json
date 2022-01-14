@@ -1,14 +1,15 @@
 /**
  * This should always be empty except for extending `tsconfig.base.json`
  *
- * This is in case other programs like Next.js may try to change the main
- * `tsconfig.json` file. We know when that happens and we can point it to a
- * specific `tsconfig.json` that extends `tsconfig.base.json` instead.
+ * This is separated in case other programs like Next.js may try to change the
+ * main `tsconfig.json` file. We actually know that Next.js **will** change
+ * this.
  *
  * If we use `tsconfig.json` instead of `tsconfig.base.json`, all the other
  * tsconfig that inherit from `tsconfig.json` could be broken by programs that
  * try to modify `tsconfig.json`.
- */ {
+ */
+{
   "extends": "./tsconfig.base.json",
   "compilerOptions": {}
 }

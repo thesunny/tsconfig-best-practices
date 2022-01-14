@@ -2,6 +2,11 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     /**
+     * When we do a build, we want the output to be in `commonjs` so that plain
+     * Node.js can understand it.
+     */
+    "module": "commonjs",
+    /**
      * Emit
      *
      * Modify `tsconfig.json` to get it to emit.
