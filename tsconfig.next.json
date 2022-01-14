@@ -1,3 +1,6 @@
+/**
+ * Incorporates the requirements of Next.js
+ */
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
