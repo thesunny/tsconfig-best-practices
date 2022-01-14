@@ -1,5 +1,13 @@
 {
   "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    /**
+     * NOTE:
+     * Doesn't seem to require "module": "commonjs" to work but leaving comment
+     * here in case it causes problems. It's not defined in `tsconfig.base.json`
+     * anymore.
+     */
+  },
   /**
    * `ts-node` needs `tsconfig-paths/register` or it won't work with
    * our custom `paths` specified in the base.
