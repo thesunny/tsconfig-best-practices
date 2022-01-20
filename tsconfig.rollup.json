@@ -2,6 +2,20 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "module": "ESNext",
-    "sourceMap": true
+    "sourceMap": true,
+    /**
+     * FIXME:
+     *
+     * There is a failure when transpiling "??" which is fixed by changing the
+     * targe to "es6".
+     *
+     * I think this needs to be clarified though. It's possible a better fix
+     * may be to switch `module` to be `es6`; however, I'm not sure if rollup
+     * is expecting the output to be `ESNext` only.
+     *
+     * Generally, I think we need to learn the different between combinations
+     * of `module` and `target` and how they affect the output.
+     */
+    "target": "es6"
   }
 }
