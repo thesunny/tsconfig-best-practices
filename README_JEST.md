@@ -21,7 +21,9 @@ Modify `package.json` in the `scripts` section
 {
   "scripts": {
     "--- test": "#",
-    "test:watch": "jest --watch"
+    "test:once": "jest --config=jest.config.js",
+    "test:watch": "jest --watch --config=jest.fast.config.js",
+    "test:watch:types": "jest --watch --config=jest.config.js"
   }
 }
 ```
